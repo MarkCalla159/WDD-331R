@@ -1,0 +1,125 @@
+//main variables
+$width:300px;
+$backgencolor:#f6f5f5;
+$bnumbcol: rgb(127, 122, 122);
+$backsectcolor: white;
+$f1color:#838383;
+$bordercolor: solid 1px #d0d0d0;
+$promocol: rgb(15, 233, 15);
+
+//extend
+%sectionformat{
+    background-color: $backsectcolor;
+    border: $bordercolor;
+    padding: 2px 32px;
+    margin-right: 6%;
+    margin-left: 5%;
+}
+%formttxt{
+    padding: 1%;
+    margin: 0%;
+    font-size: 15px;
+}
+%display{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &_title{
+        margin-left: 10px;
+        padding: 3.2px 16px;
+        color: $f1color;
+    }
+    &_numb{
+        padding: 5px 13px;
+        width: 20px;
+        color: $backsectcolor;
+        margin-right: 32px;
+        border-radius: 22px;
+        background-color: $bnumbcol;
+    }
+}
+
+.container{
+    max-width: $width;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $backgencolor;
+    
+    .product{
+        @extend %display;
+        @extend %sectionformat;
+        &_item{
+            @extend %formttxt;
+        }
+        &_amount{
+            @extend %formttxt;
+            color: $f1color;
+            margin-top: 5px;
+        }
+        &_description{
+            @extend %formttxt;
+            color: $f1color;
+        }
+    }
+    .promoCode{
+        @extend %display;
+        @extend %sectionformat;
+        background-color: $backgencolor;
+        &_Promcode{
+            @extend %formttxt;
+            color: $promocol;
+        }
+        &_amcode{
+            @extend %formttxt;
+            color: $promocol;
+            margin-top: 5px;
+        }
+        &_code{
+            @extend %formttxt;
+            color: $promocol;
+        }
+    }
+    .total{
+        @extend %display;
+        @extend %sectionformat;
+        &_Totalamount{
+            @extend %formttxt;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+        &_totalam{
+            @extend %formttxt;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+    }
+
+    .pcinput{
+        background-color: $backsectcolor;
+        border: $bordercolor;
+        border-radius: 4px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 2px 32px;
+        margin-right: 6%;
+        margin-left: 5%;
+        &_text{
+            margin: 5px 0px 5px 0px;
+        }
+        &_button{
+            color: white;
+            border-radius: 4px; 
+            border: 1px;
+            margin: 5px 0px 5px 0px;
+            background-color: $f1color;
+            cursor: pointer;
+            padding: 5%;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.container .total, .container .promoCode, .container .product {
+  background-color: white;
+  border: solid 1px #d0d0d0;
+  padding: 2px 32px;
+  margin-right: 6%;
+  margin-left: 5%;
+}
+
+.container .total_totalam, .container .total_Totalamount, .container .promoCode_code, .container .promoCode_amcode, .container .promoCode_Promcode, .container .product_description, .container .product_amount, .container .product_item {
+  padding: 1%;
+  margin: 0%;
+  font-size: 15px;
+}
+
+.container .total, .container .promoCode, .container .product {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cart_title {
+  margin-left: 10px;
+  padding: 3.2px 16px;
+  color: #838383;
+}
+.cart_numb {
+  padding: 5px 13px;
+  width: 20px;
+  color: white;
+  margin-right: 32px;
+  border-radius: 22px;
+  background-color: rgb(127, 122, 122);
+}
+
+.container {
+  justify-content: center;
+  max-width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f5f5;
+}
+.container .product_amount {
+  color: #838383;
+  margin-top: 5px;
+}
+.container .product_description {
+  color: #838383;
+}
+.container .promoCode {
+  background-color: #f6f5f5;
+}
+.container .promoCode_Promcode {
+  color: rgb(15, 233, 15);
+}
+.container .promoCode_amcode {
+  color: rgb(15, 233, 15);
+  margin-top: 5px;
+}
+.container .promoCode_code {
+  color: rgb(15, 233, 15);
+}
+.container .total_Totalamount {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.container .total_totalam {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.container .pcinput {
+  background-color: white;
+  border: solid 1px #d0d0d0;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 2px 32px;
+  margin-right: 6%;
+  margin-left: 5%;
+}
+.container .pcinput_text {
+  margin: 5px 0px 5px 0px;
+}
+.container .pcinput_button {
+  color: white;
+  border-radius: 4px;
+  border: 1px;
+  margin: 5px 0px 5px 0px;
+  background-color: #838383;
+  cursor: pointer;
+  padding: 5%;
+}
+
+/*# sourceMappingURL=main.css.map */

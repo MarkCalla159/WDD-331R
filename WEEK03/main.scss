@@ -1,0 +1,92 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    font-family: 'Lora', serif;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+hr {
+    display: none;
+}
+
+nav, .post-content {
+    border-top: solid #d0d0d0 1px;
+    border-bottom: solid #d0d0d0 1px;
+}
+
+ul {
+    display: grid;
+    list-style: none;
+    justify-items: center;
+    gap: .5rem;
+}
+
+li a {
+    font-size: 1.25rem;
+}
+
+li a, section a {
+    color: #666;
+}
+
+nav a:hover {
+    background-color: #00ddff;
+}
+
+nav a:active {
+    background-color: #DEB887;
+}
+
+.post-date {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 2rem 0 .5rem 0;
+}
+
+.post-content {
+    display: grid;
+    justify-items: center;
+}
+
+p {
+    font-family: sans-serif;
+    max-width: 600px;
+}
+
+
+@media only screen and (min-width:900px) {
+
+    ul {
+        display: flex;
+        justify-content: right;
+        gap: 2rem;
+    }
+
+    nav, .post-content {
+        border: none;
+    }
+
+    .post-content {
+        border-bottom: solid #d0d0d0 1px;
+    }
+
+    nav {
+        border-top: solid #d0d0d0 1px;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+    }
+}
